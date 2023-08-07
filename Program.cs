@@ -12,7 +12,7 @@ namespace AutoFacDemo
 
             using (var scope = container.BeginLifetimeScope())
             {
-                scope.Resolve<Application>().Run();
+                scope.Resolve<Application>().Run(); // retrieves type from container
             }
         }
 
